@@ -42,8 +42,3 @@ void getArray(int A[], int size)	//Function to display the array
 		cout<<A[i]<<' ';
 	}
 }
-/*
-Output:
-Sorted Array:
--2 6 11 13 16 28
-*/
