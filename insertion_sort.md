@@ -6,6 +6,16 @@ Boundary Cases: Insertion sort takes maximum time to sort if elements are sorted
 <br><br>
 ##Time Complexity: O(n*2)
 <br><br>
+**Pseudo Code** <br>
+for(i=1;i<n;i++){                                   //outer loop  <br>
+        for(j=i; j>0 && arr[j-1]>arr[j]; j--){      //comparing adjacent numbers and if the sequential number is greater, then swap to arrange the numbers in ascending order       <br>
+            temp = arr[j-1];                 <br>        
+            //swapped arr[j] and arr[j-1]    <br>
+            arr[j-1] = arr[j];               <br>
+            arr[j] = temp;                   <br>
+        }
+    }
+    <br><br>
 **Code Explaination:**
 User first enters the number of elements of the array.
 In the first *for loop* we are taking input of array elements from the user.
