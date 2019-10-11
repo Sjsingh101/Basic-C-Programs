@@ -1,36 +1,36 @@
-include<stdio.h> *Imports the stdio header file for standard input and output*
-
-int main() **
-{
-	int a[50],n,i,j,temp;  *Declaring integar variable and an array*
-	printf("Enter the size of array: "); *Asks for the size of array*
-	scanf("%d",&n);                      *Inputs the size*
-	printf("Enter the array elements: "); *Asks for entering the array elements*
-  
-  for(i=0;i<n;++i)                     *Loop to take number of inputs equal to the size of array*
-  {
-		scanf("%d",&a[i]); 
-  }
-  
-  for(i=1;i<n;++i)                    *Runs passes 1 less than the number of elements in array*
-  {
-		for(j=0;j<(n-i);++j)              *Runs through the elements of the array* 
-    {
-			if(a[j]>a[j+1])                 *Checks if the latter number is larger than the former*
-			{                               *Swaps the two numbers*
-				temp=a[j];
-				a[j]=a[j+1];
-				a[j+1]=temp;
-			}
-    }
-  }                                   *Sorts the array in decending order*
-  
-  printf("\nArray after sorting: ");  *Prints "Array after sorting in a new line"
-  
-  for(i=0;i<n;++i)                    *Prints the sorted array*
-  {
-		printf("%d ",a[i]);               
-  }
-  
-  return 0;                           *returns a placeholder integer because function was declared returning an int above*
+include<stdio.h>&nbsp;&nbsp;//Imports&nbsp;the&nbsp;stdio&nbsp;header&nbsp;file&nbsp;for&nbsp;standard&nbsp;input&nbsp;and&nbsp;output&nbsp;
+<br><br>
+int&nbsp;main()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+{&nbsp;&nbsp;&nbsp;<br>
+	int&nbsp;a[50],n,i,j,temp;&nbsp;&nbsp;&nbsp;//Declaring&nbsp;integar&nbsp;variable&nbsp;and&nbsp;an&nbsp;array&nbsp;&nbsp;&nbsp;<br>
+	printf("Enter&nbsp;the&nbsp;size&nbsp;of&nbsp;array:&nbsp;");&nbsp;&nbsp;//Asks&nbsp;for&nbsp;the&nbsp;size&nbsp;of&nbsp;array&nbsp;&nbsp;&nbsp;<br>
+	scanf("%d",&n);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Inputs&nbsp;the&nbsp;size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+	printf("Enter&nbsp;the&nbsp;array&nbsp;elements:&nbsp;");&nbsp;&nbsp;//Asks&nbsp;for&nbsp;entering&nbsp;the&nbsp;array&nbsp;elements&nbsp;&nbsp;<br>
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;for(i=0;i<n;++i)&nbsp;&nbsp;&nbsp;//Loop&nbsp;to&nbsp;take&nbsp;number&nbsp;of&nbsp;inputs&nbsp;equal&nbsp;to&nbsp;the&nbsp;size&nbsp;of&nbsp;array&nbsp;&nbsp;<br>
+&nbsp;&nbsp;{<br>
+		scanf("%d",&a[i]);&nbsp;<br>
+&nbsp;&nbsp;}&nbsp;<br>
+&nbsp;&nbsp;
+&nbsp;&nbsp;for(i=1;i<n;++i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;{&nbsp;<br>
+		for(j=0;j<(n-i);++j)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Runs&nbsp;through&nbsp;the&nbsp;elements&nbsp;of&nbsp;the&nbsp;array&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+			if(a[j]>a[j+1])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Checks&nbsp;if&nbsp;the&nbsp;latter&nbsp;number&nbsp;is&nbsp;larger&nbsp;than&nbsp;the&nbsp;former&nbsp;&nbsp;<br>
+			{&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Swaps&nbsp;the&nbsp;two&nbsp;numbers&nbsp;&nbsp;<br>
+				temp=a[j];&nbsp;<br>
+				a[j]=a[j+1];<br>
+				a[j+1]=temp;<br>
+			}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Sorts&nbsp;the&nbsp;array&nbsp;in&nbsp;decending&nbsp;order&nbsp;&nbsp;<br>
+&nbsp;&nbsp;
+&nbsp;&nbsp;printf("\nArray&nbsp;after&nbsp;sorting:&nbsp;");&nbsp;&nbsp;//&nbsp;Prints&nbsp;"Array&nbsp;after&nbsp;sorting&nbsp;in&nbsp;a&nbsp;new&nbsp;line"&nbsp;<br><br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;for(i=0;i<n;++i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Prints&nbsp;the&nbsp;sorted&nbsp;array&nbsp;&nbsp;<br>
+&nbsp;&nbsp;{&nbsp;<br>
+		printf("%d&nbsp;",a[i]);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;}&nbsp;<br><br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;return&nbsp;0;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//returns&nbsp;a&nbsp;placeholder&nbsp;integer&nbsp;because&nbsp;function&nbsp;was&nbsp;declared&nbsp;returning&nbsp;an&nbsp;int&nbsp;above&nbsp;&nbsp;<br>
 }
