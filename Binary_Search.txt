@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int bs(int input[],int s,int e,int element);
+int bs(int input[],int s,int e,int element); //function declaration
 int binarySearch(int input[], int size, int element) {
 
  return bs(input,0,size-1,element);
@@ -24,12 +24,13 @@ int bs(int input[],int s,int e,int element)
 int main() {
     int input[100000],length,element, ans;
     cin >> length;
+    //taking number of inputs = length
     for(int i =0;i<length;i++)
     { 
         cin >> input[i];;
     }
 
-    cin>>element;
+    cin>>element; //take element to search
     ans = binarySearch(input, length, element);
     cout<< ans << endl;
 }

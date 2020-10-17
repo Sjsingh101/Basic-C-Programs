@@ -1,19 +1,21 @@
 #include<stdio.h>
-int sum(int);
+int fact(int); //function declaration
 main()
 {
    int x,z;
-   printf("Enter the value of x:\n");
-   scanf("%d",&x);
-   z=sum(x);
-   printf("The sum of %d numbers is %d.\n",x,z);
+   printf("Enter the value of x:\n"); //value upto which you want to find factorial
+   scanf("%d",&x);   
+   z=fact(x);  //function call
+   printf("The factorial of %d numbers is %d.\n",x,z);
 }
-int sum(int a)
+
+//function definition to find factorial
+int fact(int a)
 {
     int s;
-    if(a==1)
+    if(a==1)   //base case
         return(a);
-    s=a*sum(a-1);
+    s=a*fact(a-1);   //recursion
     return(s);
 }
 
