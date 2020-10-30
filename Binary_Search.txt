@@ -9,13 +9,13 @@ int binarySearch(int input[], int size, int element) {
 }
 int bs(int input[],int s,int e,int element)
 {
-  int m=(s+e)/2;
+  int mid=(s+e)/2;
   if(s>e)
     return -1;
-  if(input[m]==element)
-    return m;
-  else if(input[m]>element)
-    return bs(input,s,m-1,element);
+  if(input[mid]==element)
+    return mid;
+  else if(input[mid]>element)
+    return bs(input,s,mid-1,element);
   else if(input[m]<element)
     return bs(input,m+1,e,element);
 }
